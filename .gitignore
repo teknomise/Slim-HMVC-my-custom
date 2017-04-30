@@ -1,0 +1,5 @@
+storage/cache/**
+storage/log/**
+public/node_modules/**
+vendor/**
+.env

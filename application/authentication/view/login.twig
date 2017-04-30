@@ -1,0 +1,39 @@
+{% extends 'layout/master-layout-admin.twig' %}
+{% block body %}
+	<div class="login">
+		<h1><a href="/web-admin">Administrator Login </a></h1>
+		
+		<div id="error"></div>
+		<div class="login-bottom">
+			<h2>Login</h2>
+			 <form class="form-signin" method="post" id="login-form">
+			<div class="col-md-6">
+				<div class="login-mail">
+					
+					<input type="text" id="username" name="email" value="" placeholder="Email" >
+					<i class="fa fa-envelope"></i>
+				</div>
+				<div class="login-mail">
+				
+					<input type="password" id="password" name="password" value="" placeholder="Password" >
+					<i class="fa fa-lock"></i>
+				</div>
+				   <!--a class="news-letter " href="#">
+						 <label class="checkbox1"><input type="checkbox" name="checkbox" ><i> </i>Forget Password</label>
+					   </a>-->
+			</div>
+			<div class="col-md-6 login-do">
+				<label class="hvr-shutter-in-horizontal login-sub">				
+					<input type="submit" value="Masuk" id="btn-login">
+				</label>
+				<p>Silahkan isi data privat untuk akses kedalam Dashboard Admin</p>
+				<!--<a href="signup.html" class="hvr-shutter-in-horizontal">Signup</a>-->
+			</div>
+			
+			<div class="clearfix"> </div>
+			</form>
+		</div>
+	</div>
+{% endblock %}
+
+
