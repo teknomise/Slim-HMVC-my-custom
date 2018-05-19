@@ -1,12 +1,17 @@
-# Welcome to Slim Skeleton [McG] Custom HMVC
+# Welcome to Ramo New Stacks
 * Develop based on Slim PHP microframework for lightweight and fast computing - full stack
-* MVC & OOP
+* HMVC & OOP
 * HTML templating using .twig
-* last develop: 27 April 2017
+* Logger using monolog
+* Token using JWT
+* DB Query using Meedo
+* Runtime server using Extreme Speed Engine Swoole
+
+#Bootstrapped by Risdyanto Kurniawan (teknomise.indo@gmail.com)
 
 #JS / CSS:
-  - should be managed in /public
-
+  - Managed in /public
+  - Minified version stored separatedly and proceed using Php Minifier
 
 Please feel free to send me critics, suggestions or feedbacks.
 I hope this could be beneficial to you!

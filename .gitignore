@@ -3,3 +3,6 @@ storage/log/**
 public/node_modules/**
 vendor/**
 .env
+.DS_STORE
+composer.lock
+.vscode

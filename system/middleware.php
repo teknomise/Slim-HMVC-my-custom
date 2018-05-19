@@ -6,8 +6,7 @@
  * @Last Modified time: 
  */
 // Application middleware
-use Slim\Middleware\JwtAuthentication\RequestMethodRule;
-use Slim\Middleware\JwtAuthentication\RequestPathRule;
+
 
 $container = $app->getContainer();
 
@@ -24,31 +23,4 @@ $app->add(function ($request, $response, $next) {
     return $next($request, $response);
 });
 
-$app->add(new \Slim\Middleware\JwtAuthentication([
-    "secure"   => false,
-    "relaxed"  => ["localhost"],
-    "secret"   => getenv("JWT_SECRET"),
-    "callback" => function ($request, $response, $arguments) use ($container) {
-        $container["jwt"] = $arguments["decoded"];
-    },
-    "rules"    => [
-        new RequestPathRule([
-            "path"        => [""], // APPLY TO ALL ROUTE!
-            "passthrough" => [
-                "/api/v1/login",
-                "/dashboard",
-                "/web-admin",
-                "/api/v1/admin/editslides",
-                "/api/v1/admin/uploadimages",
-                "/api/v1/admin/upload-satwa-images"
-            ],
-            // EXCEPTION ROUTE WITHOUT AUTH
-        ]),
-        new \Slim\Middleware\JwtAuthentication\RequestMethodRule([
-            "passthrough" => ["GET", "OPTIONS"], // EXCEPTION METHOD WITHOUT AUTH
-        ]),
-    ],
-    "error"    => function ($request, $response, $arguments) use ($app) {
-        return $response->write(json_encode(["status" => 404, "messages" => "JWT Token Authentication Failed."]));
-    },
-]));
+$app->add(new \Slim\HttpCache\Cache('public', 86400));

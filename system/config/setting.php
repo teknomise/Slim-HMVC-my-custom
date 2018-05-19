@@ -1,10 +1,5 @@
 <?php
-/**
- * @Author: mikegani
- * @Date:   2016-03-21 16:06:03
- * @Last Modified by:   mg5
- * @Last Modified time: 2016-12-13 18:05:44
- */
+
 return [
     'settings' => [
         'displayErrorDetails' => true, // set to false in production
@@ -17,13 +12,14 @@ return [
         // Twig View settings
         'view' => [
             'template_path' => PATH_ROOT.'application/',
-            'cache_path' => PATH_ROOT.'storage/cache/',
+            'cache_path' => PATH_ROOT.'var/cache/',
             'debug' => true,
         ],
         // Monolog settings
         'logger' => [
-            'name' => 'slim-app',
-            'path' => PATH_ROOT.'storage/log/server.log',
+            'name' => 'log-error',
+            'path' => PATH_ROOT.'var/logs/error.log',
         ],
+        'routerCacheFile' => PATH_ROOT . 'var/tmp/routes.cache.php',
     ],
 ];

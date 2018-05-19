@@ -9,9 +9,10 @@ define("MASTER_DB_NAME", getenv("DB_NAME"));
 
 define("SQL_SELECT", 1);
 define("SQL_UPDATE", 2);
-define("SQL_DELETE", 3);
+define("SQL_CREATE", 3);
+define("SQL_DELETE", 4);
 
 //SQL
-define("SQL_DUMMY", "dummy");
+
 
 

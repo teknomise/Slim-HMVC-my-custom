@@ -1,17 +1,12 @@
 <?php
 /**
  * @Author: Risdyanto Kurniawan
- * @Date:   Jumat 28 April 2017
+ * @Date:   7 Mei 2017
  * @Last Modified by:   
  * @Last Modified time: 
  */
-$env = getenv("ENV");
+
 
 // Environtment: Develop
-if($env == "develop"){
-  include ('router/develop.php');
-}
-// Environtment: Production
-else {
-  include ('router/production.php');
-}
+include ('router/general.php');
+include ('router/motor.php');

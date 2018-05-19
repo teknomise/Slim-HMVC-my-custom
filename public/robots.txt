@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /api
 
-Sitemap: localhost/sitemap.xml
+Sitemap: sitemap.xml

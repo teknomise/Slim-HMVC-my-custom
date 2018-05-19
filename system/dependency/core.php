@@ -9,25 +9,16 @@
 
 $container = $app->getContainer();
 
-$container['Core\Mailer'] = function ($c) {
-    return new Core\Mailer(
-        $c->get('view')
-    );
+$container['Helpers\EHelper'] = function ($c) {
+	return new Helpers\AuthHelper;
 };
 
-$container['Core\JWTHelper'] = function ($c) {
-    return new Core\JWTHelper;
+$container['Helpers\BaseController'] = function($c){
+	return new Helpers\BaseController;
 };
 
-$container['Core\AuthHelper'] = function ($c) {
-	return new Core\AuthHelper;
+$container['Helpers\BaseService'] = function($c){
+	return new Helpers\BaseService;
 };
 
-$container['Core\BaseController'] = function($c){
-	return new Core\BaseController;
-};
-
-$container['Core\BaseService'] = function($c){
-	return new Core\BaseService;
-};
 

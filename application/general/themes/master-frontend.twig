@@ -1,0 +1,27 @@
+{% spaceless %}
+<!DOCTYPE html>
+<html lang="id" itemscope itemtype="http://schema.org/Product">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> {{ meta.seo | raw }}
+    <link rel="icon" href="{{ base_url() }}/assets/images/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ base_url() }}/assets/css/main-framework.css">
+    <link rel="stylesheet" href="{{ base_url() }}/assets/css/main-style.css"> {{ added_css | raw }}
+</head>
+
+<body>
+    <div class="overlay-body"></div>
+    <div class="overlay-menu"></div>
+    {% include 'general/themes/header.twig' %}
+    <main>
+        {% block body %}{% endblock body%}
+    </main>
+    {% include 'general/themes/footer.twig' %}
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="{{ base_url() }}/assets/js/main-framework.js"></script>
+{{ added_script | raw }}
+
+</html>
+{% endspaceless %}

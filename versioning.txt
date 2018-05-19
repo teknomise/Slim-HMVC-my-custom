@@ -1,0 +1,8 @@
+# Tanggal : Kamis, 7 Maret 2018
+# Coder   : Risdyanto Kurniawan
+# Task    :
+    
+    1. Bootstrapping Stack untuk feature motor
+    2. Penambahan runtime Swoole Extension
+    3. Setting konfigurasi aplikasi
+==========================================================

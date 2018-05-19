@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="50px" viewBox="0 0 51 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Lihat promo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-0.7%" y="-5.7%" width="101.5%" height="114.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="showroom-detail-(autorized-dealer)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1151.000000, -726.000000)">
+        <g id="Group-45-Copy" filter="url(#filter-1)" transform="translate(148.896600, 701.000000)">
+            <g id="Group-50" transform="translate(968.327550, 25.000000)">
+                <g id="lihat-promo" transform="translate(33.976405, 0.000000)">
+                    <path d="M35.9184529,31.7924528 L44.9687717,22.7358491" id="Shape" stroke="#F16033" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M35.9184529,13.6792453 L44.9687717,22.7358491" id="Shape" stroke="#F16033" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M44.9687717,22.7358491 L30.6391002,22.7358491" id="Shape" stroke="#F16033" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polyline id="Shape" fill="#D2E5F1" fill-rule="nonzero" points="21.5887814 40.0943396 30.6391002 40.0943396 30.6391002 27.2641509 30.6391002 18.2075472 30.6391002 5.37735849 4.99653019 5.37735849 4.99653019 40.0943396"></polyline>
+                    <polygon id="Shape" fill="#F2FDFF" fill-rule="nonzero" points="21.5887814 10.6603774 4.99653019 5.37735849 4.99653019 40.0943396 21.5887814 45.3773585"></polygon>
+                    <path d="M15.5552355,27.2641509 L19.3262017,28.7735849" id="Shape" stroke="#D2E5F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

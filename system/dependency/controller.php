@@ -2,7 +2,7 @@
 
 /**
  * @Author: Risdyanto Kurniawan
- * @Date:   Jumat 28 April 2017
+ * @Date:   7 Mei  2018
  * @Last Modified by:   
  * @Last Modified time: 
  */
@@ -10,9 +10,26 @@
 // DIC configuration
 $container = $app->getContainer();
 
-// 1) HOME CONTROLLER
-$container['Application\Home\Controller\Home'] = function ($c) {
-    return new \Application\Home\Controller\Home(
+// 1) MOTOR HOME CONTROLLER
+$container['Application\Modules\Motor\Home'] = function ($c) {
+    return new \Application\Modules\Motor\Home\Controller(
+        $c->get('view')
+    );
+};
+
+$container['Application\Modules\Motor\Detail'] = function ($c) {
+    return new \Application\Modules\Motor\Detail\Controller(
+        $c->get('view')
+    );
+};
+
+
+
+
+
+// ERROR PAGES
+$container['Application\Errors'] = function ($c) {
+    return new \Application\Errors\ErrorController(
         $c->get('view')
     );
 };

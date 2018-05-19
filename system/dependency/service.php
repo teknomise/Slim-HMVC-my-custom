@@ -1,17 +1,11 @@
 <?php
 
-/**
- * @Author: Risdyanto Kurniawan
- * @Date:   Jumat, 28 April 2017
- * @Last Modified by:   
- * @Last Modified time: 
- */
 // DIC configuration
 $container = $app->getContainer();
 
 // 1) HOMEPAGE SERVICE
-$container['Service\Homepage'] = function ($c) {
-    return new Service\Homepage(
+$container['Application\Frontend\Service\HomeService'] = function ($c) {
+    return new Application\Frontend\Service\HomeService(
         $c->get('Model\Sqlstatement')
     );
 };
