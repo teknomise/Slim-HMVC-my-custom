@@ -22,10 +22,13 @@ define("IMAGE_EXTENSION_FILE_GIF", 'gif');
 define("IMAGE_FOLDER", 'cache'); // Default name on local folder
 define("IMAGE_QUALITY", '90');
 
-define("IMAGE_RESIZER", 'resizer');
 define("IMAGE_SIZE_LARGE_RESOLUTION", '3500 x 3500'); // Large px
 define("IMAGE_SIZE_MEDIUM_RESOLUTION", '1500 x 1500'); // Medium px
 define("IMAGE_SIZE_SMALL_RESOLUTION", '1000 x 1000'); // Small px
 define("IMAGE_SIZE_SLIDER_RESOLUTION", '1380 x 750'); // Thumbnail px
 define("IMAGE_SIZE_THUMBNAIL_SLIDER", '150 x 150');
+
+define("IMG_HOME_BANNER", '1440x360/media/images/banner/');
+
+define("MOTOR_HOME_CONTROLLER", "index");
 

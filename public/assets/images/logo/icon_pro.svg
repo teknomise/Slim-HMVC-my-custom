@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="30.2919877%" cy="10.9739664%" fx="30.2919877%" fy="10.9739664%" r="72.2236427%" id="radialGradient-1">
+            <stop stop-color="#F2E4CA" offset="0%"></stop>
+            <stop stop-color="#ECB142" offset="86.7890921%"></stop>
+            <stop stop-color="#ECAF40" offset="100%"></stop>
+        </radialGradient>
+        <polygon id="path-2" points="24.7803165 33.7039571 14.519025 39.0980408 16.4781848 27.6730186 8.17605312 19.5806142 19.6496707 17.9130264 24.7803165 7.51617944 29.9109623 17.9130264 41.3845799 19.5806142 33.0824482 27.6730186 35.041608 39.0980408"></polygon>
+        <filter x="-1.5%" y="-1.6%" width="103.0%" height="103.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.75 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <radialGradient cx="30.2919877%" cy="10.9739664%" fx="30.2919877%" fy="10.9739664%" r="70.6877964%" id="radialGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="88.6459662%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="(My-Ramo)-New-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="Group-9">
+                <circle id="Oval" stroke="#C58814" stroke-width="2" fill="url(#radialGradient-1)" cx="24.7803165" cy="24.7803165" r="22.8909669"></circle>
+                <g id="Shape-Copy-26" fill-rule="nonzero">
+                    <use fill="#BF822B" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                </g>
+                <circle id="Oval" fill-opacity="0.400000006" fill="url(#radialGradient-4)" cx="25.0533938" cy="25.0533938" r="20.2446598"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

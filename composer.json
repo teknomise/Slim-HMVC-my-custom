@@ -1,13 +1,13 @@
 {
     "name": "Rajamobil.com",
     "description": "Rajamobil",
-    "keywords": ["php", "slim"],
+    "keywords": ["php", "slim", "rajamobil"],
     "homepage": "https://rajamobil.com",
     "license": "MIT",
     "authors": [{
         "name": "Risdyanto Kurniawan",
-        "email": "teknomise.indo@gmail.com",
-        "homepage": "https://teknomise.tk"
+        "email": "risdyanto@rajamobil.net",
+        "homepage": "https://rajamobil.com"
     }],
     "autoload": {
         "psr-4": {
@@ -28,17 +28,14 @@
         "php": ">=5.5.0",
         "slim/slim": "^3.1",
         "slim/twig-view": "^2.0",
-        "slim/csrf": "^0.8.2",
         "slim/http-cache": "^0.3.0",
         "slim/flash": "^0.1",
         "monolog/monolog": "^1.17",
         "vlucas/phpdotenv": "^2.2",
         "dopesong/slim-whoops": "^1.0",
         "guzzlehttp/guzzle": "~6.2",
-        "mobiledetect/mobiledetectlib": "^2.8",
-        "samdark/sitemap": "^2.0",
         "symfony/http-foundation": "^3.2",
-        "matthiasmullie/minify": "^1.3",
-        "middlewares/debugbar": "^1.0"
+        "adbario/slim-csrf": "^1.1",
+        "odan/twig-assets": "^1.2"
     }
 }

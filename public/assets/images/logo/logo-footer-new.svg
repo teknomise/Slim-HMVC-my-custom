@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="108px" height="91px" viewBox="0 0 108 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>8962B22E-223A-4E26-8200-5B29ADB3ED48</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-4.0%" y="-2.4%" width="107.9%" height="109.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="WWW&gt;Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-(Merek)" transform="translate(-151.000000, -5185.000000)" fill-rule="nonzero">
+            <g id="Group-50" transform="translate(0.000000, 594.000000)">
+                <g id="Group-32" transform="translate(0.000000, 1455.000000)">
+                    <g id="Group-50-Copy" transform="translate(0.000000, 3099.000000)">
+                        <g id="Group-46-+-Rajamobil.com-adalah-+-256x256bb-copy-Mask" transform="translate(149.000000, 28.000000)">
+                            <g id="Group" transform="translate(2.000000, 9.000000)">
+                                <g filter="url(#filter-1)" transform="translate(3.534737, 2.609611)" id="Shape">
+                                    <path d="M97.8685877,78.6895209 L83.4782716,61.6040286 C83.0932464,61.1468112 82.5157087,60.8821064 81.9381709,60.8821064 L78.1360472,60.8821064 L72.8900792,51.0158362 C87.5932282,44.2778956 100.443444,36.3126872 100.443444,23.7993689 C100.443444,16.002609 96.3284869,9.43311688 88.8686241,5.29409621 C82.8285416,1.94918997 74.6226925,0.168448516 65.0933193,0.168448516 L11.3341787,0.168448516 L0.0240640737,23.6790485 L21.5854741,23.6790485 L3.68180327,81.986299 L34.6763302,81.986299 L42.0880649,57.7778409 L54.9382802,81.986299 L96.2803588,81.986299 C98.0611003,82.0344272 98.9755351,80.013045 97.8685877,78.6895209 Z M52.6040651,23.7271766 L58.6200835,23.7271766 C65.5024086,23.7271766 69.1601478,25.9410714 69.2804681,27.1683392 C69.1360837,27.5293003 67.4997267,30.705758 56.4302528,35.0132272 C53.566628,36.1201746 50.7030032,37.0586735 48.2725318,37.8046598 L52.6040651,23.7271766 Z" fill="#FFFFFF"></path>
+                                    <g transform="translate(9.144348, 6.016018)" fill="#ED5B29">
+                                        <polygon points="20.5988471 70.8927611 37.6362112 15.4250712 19.2993871 15.4250712 2.286087 70.8927611"></polygon>
+                                        <path d="M71.4221707,62.037182 L65.7189852,62.037182 L55.3954976,42.5934104 C72.7938229,35.1094835 85.9328071,27.9383895 85.9328071,17.9036708 C85.9328071,6.06414657 73.0825918,0.168448516 56.2618043,0.168448516 L5.46254473,0.168448516 L0.0240640737,11.4544991 L49.6201199,11.4544991 C59.6067105,11.4544991 66.8259326,15.2566227 66.8259326,21.3688974 C66.8259326,32.4624354 34.628202,39.9704264 33.4731265,40.187003 L33.4971906,40.2351312 L33.4731265,40.2351312 L49.7163762,70.8446329 L78.8339054,70.8446329 L71.4221707,62.037182 Z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

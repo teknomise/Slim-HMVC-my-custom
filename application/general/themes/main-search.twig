@@ -1,0 +1,94 @@
+{% block main_search %} {% set show_search = controller in filter_array ? "hidden" : "" %} {% set show_tab = controller in filter_array ? "hidden" : "" %}
+
+<section id="menu-cari-mobil" class="menu-cari-mobil {{ show_search }} hidden-xs hidden-sm animated slideInUp" data-drive="{{ type }}">
+    <div class="container">
+        <div class="new-search-form">
+            <ul class="nav nav-tabs {{ show_tab }}">
+                <li><a data-toggle="tab" href="#mobil-baru" data-id="0" class="ganti_data">Mobil Baru</a></li>
+                <li><a data-toggle="tab" href="#mobil-bekas" data-id="1" class="ganti_data">Mobil Bekas</a></li>
+                <li class="active"><a data-toggle="tab" href="#motor-baru" data-id="3" class="ganti_data">Motor Baru</a></li>
+                <li><a data-toggle="tab" href="#mobil-import" data-id="2" class="ganti_data">Mobil Baru Importir Umum</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="cari-header">
+                    <h1>Cari Promo Motor Baru Terbaik di Kota Anda</h1>
+                </div>
+                <div id="mobil-baru" class="tab-pane fade in active">
+                    <div class="mpencarian hidden-xs hidden-sm">
+                        <form id="carimobil-form" action="cari-mobil-parse" method="POST">
+                            {{ csrf | raw }}
+                            <div class="basic">
+                                <div class="row-select left select-search">
+                                    <label for="berdasarkan">Cari Berdasarkan</label>
+                                    <select id="cariberdasarkan" class="dropdown-list-sm icon-dropdown">
+                                        <option value="0">Merek</option>
+                                        <option value="1">Harga</option>
+                                    </select>
+
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    <div class="cleaner"></div>
+                                </div>
+
+                                <div class="row-select left master-tooltips1 select-search">
+                                    <label for="berdasarkan">Lokasi</label>
+                                    <div id="pencarian">
+                                        {{ kota_all }}
+                                    </div>
+                                </div>
+
+                                <div class="row-select left select-search" id="select-merek">
+                                    <label for="merek">Pilih Merek Mobil</label>
+                                    <input type="text" placeholder="Pilih Merek" class="input-merek" readonly>
+                                    <input type="hidden" name="merek" id="merek-value">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    <div id="merek"></div>
+                                    <div id="show-merek" class="list-harga"></div>
+                                    <div class="cleaner"></div>
+                                </div>
+
+                                <div class="row-select left  select-search" id="select-model">
+                                    <label for="model">Pilih Model Mobil</label>
+                                    <input type="text" placeholder=" Models" class="input-model" readonly>
+                                    <input type="hidden" name="model" id="model-value">
+                                    <i class="fa fa-chevron-down" aria-hidden="true" style="top:0;"></i>
+                                    <div id="show-model" class="list-harga"></div>
+                                    <div class="cleaner"></div>
+                                </div>
+
+                                <div class="row-select left select-search" id="select-price">
+                                    <label for="berdasarkan">Harga</label>
+                                    <input type="text" placeholder="Pilih Harga" class="input-price" readonly>
+                                    <input type="hidden" name="price_start" id="inp-price-start">
+                                    <input type="hidden" name="price_finish" id="inp-price-finish">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i> {{ getNewListHarga }}
+                                </div>
+
+                                <div class="cleaner"></div>
+                                <input type="hidden" id="cekkondisibaru" value="0" name="kondisikendaraan">
+                                <input type="hidden" id="merekname" name="mrrk" />
+                                <input type="hidden" id="modelname" name="mdl_name" />
+                                <input type="hidden" id="yearstart" name="year_start" />
+                                <input type="hidden" id="yearfinish" name="year_finish" />
+                                <input type="hidden" id="transmisi" name="transmisi" />
+                                <input type="hidden" id="warna" name="warna" />
+
+                                <div class="button right">
+                                    <input type="submit" id="submit-search" name="submit" value="Cari Mobil">
+                                </div>
+                            </div>
+                            <div class="cleaner"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="textboxx">
+            <div class="textbox hidden-md hidden-lg">
+                <label>Temukan mobil idaman anda</label>
+                <div class="textbox-search bgg"></div>
+            </div>
+        </a>
+    </div>
+</section>
+{% endblock %}

@@ -16,7 +16,7 @@ if (PHP_SAPI == 'cli-server') {
 }
 
 require PATH_ROOT . 'vendor/autoload.php';
-session_start();
+//session_start();
 
 $dotenv = new Dotenv\Dotenv(PATH_ROOT);
 $dotenv->load();

@@ -1,5 +1,151 @@
 {% block footer %}
-<footer id="footer">
+<footer>
+    {% if show_footer %}
+    <div class="new-footer footer-sitemap">
+        <div class="container footer-container">
+            <div class="row">
+                <div class="hidden-xs col-sm-1 col-md-1 col-lg-1">
+                    <a href="{{ base_url() }}" class="logo-foot ga-event" data-galabel="Logo Footer" data-gakategori="Global" data-gaaction="Footer Area">
+                        <img src="{{ base_url() }}/assets/images/logo/logo-footer-new.svg" alt="Rajamobil.com">
+                    </a>
+                </div>
 
+                <div class="hidden-xs col-sm-8 col-md-8 col-lg-8">
+                    <div class="description">
+                        <p>RajaMobil.com adalah portal mobil. Portal ini memudahkan pengunjung dalam proses jual-beli mobil baru dan bekas yang tersaji eksklusif dengan gambar menarik dan informasi lengkap. Rajamobil.com juga memiliki banyak fitur menarik
+                            yang tentu saja berkaitan dengan bisnis mobil, seperti perhitungan simulasi kredit dan asuransi, serta fitur lainnya.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 pad-top-1-rem sosial-icons">
+                    <h5><strong>Ikuti Kami di:</strong></h5>
+                    <ul class="socialmedia">
+                        <li class="bgimg fb"><a href="https://www.facebook.com/rajamobildotcom" title="Facebook" rel="follow" target="_blank" itemprop="sameAs" class="gaevent" data-galabel="Facebook" data-gakategori="global" data-gaaction="Footer Area">Facebook</a></li>
+                        <li class="bgimg tw"><a href="https://twitter.com/RajaMobilCom" title="Twitter" rel="follow" target="_blank" itemprop="sameAs" class="gaevent" data-galabel="Twitter" data-gakategori="global" data-gaaction="Footer Area">Twitter</a></li>
+                        <li class="bgimg youtube"><a href="https://www.youtube.com/channel/UCiTU8w3fAt2hIjZeP2gPyaA" title="YouTUBE" rel="follow" target="_blank" itemprop="sameAs" class="gaevent" data-galabel="YouTUBE" data-gakategori="global" data-gaaction="Footer Area">YouTUBE</a></li>
+                        <li class="bgimg gplus"><a href="https://plus.google.com/+rajamobil" title="GooglePlus" rel="follow" target="_blank" itemprop="sameAs" class="gaevent" data-galabel="GooglePlus" data-gakategori="global" data-gaaction="Footer Area">GooglePlus</a></li>
+                        <li class="bgimg ig"><a href="https://www.instagram.com/rajamobilcom" title="IG" rel="follow" target="_blank" itemprop="sameAs" class="gaevent" data-galabel="IG" data-gakategori="global" data-gaaction="Footer Area">IG</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="row space-large">
+                <div class=" col-sm-8 col-md-8 col-lg-8">
+                    <div class="row xs-top-4-rem">
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 no-pad-R float-ipad">
+                            <div data-action="cari_mobil" class="sitemap">
+                                <h4 class="f-menu-parent">Cari Mobil <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></h4>
+                                <ul class="m-dropdown-a">
+                                    <li><a href="/jual/mobil/baru" title="Mobil Baru">Mobil Baru</a></li>
+                                    <li><a href="/jual/mobil/bekas" title="Mobil Bekas">Mobil Bekas</a></li>
+                                    <li><a href="/jual/mobil/baru-importir-umum" title="Mobil Baru Importir Umum">Mobil Baru Importir Umum</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div data-action="pembeli" class="sitemap">
+                                <h4 class="f-menu-parent">Pembeli <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></h4>
+                                <ul class="m-dropdown-b">
+                                    <li><a href="/panduan/user" title="Cara Beli Mobil Baru" class="gaevent" data-galabel="Cara Beli Mobil Baru" data-gakategori="global" data-gaaction="Footer Area">Cara Beli Mobil Baru</a></li>
+                                </ul>
+                            </div>
+                            <div data-action="wiraniaga" class="sitemap">
+                                <h4 class="f-menu-parent">Wiraniaga <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></h4>
+                                <ul class="m-dropdown-c">
+                                    <li><a href="/panduan/sales" title="Cara Jual Mobil Baru" class="gaevent" data-galabel="Cara Jual Mobil Baru" data-gakategori="global" data-gaaction="Footer Area">Cara Jual Mobil Baru</a></li>
+                                    <li><a href="/pasangiklan" title="Pasang Iklan Mobil Bekas" class="gaevent" data-galabel="Pasang Iklan Mobil Bekas" data-gakategori="global" data-gaaction="Footer Area">Pasang Iklan Mobil Bekas</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div data-action="berita_mobil" class="sitemap">
+                                <h4 class="f-menu-parent">Berita Mobil<span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span> </h4>
+                                <ul class="m-dropdown-d">
+                                    <li><a href="http://berita.rajamobil.com/category/berita-mobil/" title="Berita Mobil" class="gaevent" data-galabel="Berita Mobil" data-gakategori="global" data-gaaction="Footer Area">Berita Mobil</a></li>
+                                    <li><a href="http://berita.rajamobil.com/review-mobil/" title="Review Mobil" class="gaevent" data-galabel="Review Mobil" data-gakategori="global" data-gaaction="Footer Area">Review Mobil</a></li>
+                                    <li><a href="http://berita.rajamobil.com/category/tips-mobil/" title="Tips Mobil" class="gaevent" data-galabel="Tips Mobil" data-gakategori="global" data-gaaction="Footer Area">Tips Mobil</a></li>
+                                    <li><a href="http://berita.rajamobil.com/category/rajamobil-tv/" title="RajaMobil TV" class="gaevent" data-galabel="RajaMobil TV" data-gakategori="global" data-gaaction="Footer Area">RajaMobil TV</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div data-action="mobil_terpopuler" class="sitemap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 xs-top-custcare">
+                    <div class="terhubung">
+                        <div class="customercare">
+                            <div class="cs-icon left"></div>
+                            <div class="keterangan left">
+                                <span class="label">Customer Care</span>
+                                <span class="telepon">021 2751 8991</span>
+                                <span class="hari-kerja">Senin-Jumat, 08:00-17:00 WIB</span>
+                            </div>
+                            <div class="cleaner"></div>
+                        </div>
+                        <div class="gabung ">
+
+                            <div class="hidden-xs hidden-sm">
+                                <h2>Tracking Pembelian Mobil</h2>
+                                <div class="gabung-notifikasi">
+                                    <div class="gabung-label left">Menyimpan ..</div>
+                                    <div class="gabung-loadbar right">
+                                        <img src="{{ base_url() }}/assets/images/loadingbar/subscribe.gif" width="16" height="11" alt="Loading Subscribe" title="Loading Subscribe"> </div>
+                                    <div class="cleaner"></div>
+                                </div>
+                                <form id="tracking-form" action="sales/tracking" method="get">
+                                    <input type="text" name="tracking_code" class="code-tracking" placeholder="Masukkan kode pesanan" required="">
+                                    <input type="submit" id="subscribe-btn" value="Lihat">
+                                </form>
+                            </div>
+
+                        </div>
+
+                        <div class="appsx">
+                            <h2>Download Gratis Aplikasi my.RajaMobil.com</h2>
+                            <span>
+                                Nikmati kemudahan jual mobil hanya dari Smartphonemu
+                                </span>
+                            <ul class="apps">
+                                <li>
+                                    <a class="iconapps googleplay" href="https://play.google.com/store/apps/details?id=com.myrajamobilcom.apps" title="Google Play" rel="nofollow" target="_blank">Google Play</a> </li>
+                                <li>
+                                    <a class="iconapps appstore" href="https://itunes.apple.com/my/app/myrajamobil/id1081766276" title="App Store" rel="nofollow" target="_blank">App Store</a> </li>
+                            </ul>
+                            <div class="cleaner"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-btmmenu">
+        <div class="container footer-container">
+            <div class="fbtm-left">
+                <ul class="fmenu">
+                    <li><a href="/jual/mobil/baru" title="Cari Mobil">Cari Mobil</a></li>
+                    <li><a href="https://my.rajamobil.com/" target="_blank" rel="nofollow">Daftar Keanggotaan</a></li>
+                    <li><a href="/karir.htm" title="Karir">Karir</a></li>
+                    <li><a href="/tentang-kami.htm" title="Tentang Kami">Tentang Kami</a></li>
+                    <li><a href="/contact.htm" title="Kontak Kami">Kontak Kami</a></li>
+                    <li><a href="/syarat-dan-ketentuan.htm" title="Syarat Dan Ketentuan">Syarat Dan Ketentuan</a></li>
+                </ul> <span class="cp">Copyright © <span itemprop="copyrightYear">2012-2018</span> <span itemprop="copyrightHolder" itemscope="" itemtype="http://schema.org/Organization"><span itemprop="name">PT. RajaMobil Media (RajaMobil.com)</span></span>,
+                All Right Reserved.</span>
+            </div>
+        </div>
+    </div>
+    {% endif %}
 </footer>
+<!--start scroll to-->
+<div class='go-top'>
+    <div class="top"></div>
+</div>
+<!--end scroll to-->
 {% endblock %}

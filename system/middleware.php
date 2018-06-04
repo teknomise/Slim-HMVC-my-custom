@@ -24,3 +24,9 @@ $app->add(function ($request, $response, $next) {
 });
 
 $app->add(new \Slim\HttpCache\Cache('public', 86400));
+
+/** Csrf */
+//$app->add($container->get('csrf'));
+
+/** Session */
+$app->add(new \Adbar\SessionMiddleware($container->get('settings')['session']));

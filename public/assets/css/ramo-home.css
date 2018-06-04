@@ -1,0 +1,1259 @@
+/* -------- NEW HOME STYLE -------------
+* recoded by : Risdyanto Kurniawan
+* start-work : Tuesday, 19 September 2017
+* finished on : 
+----------------------------------------*/
+
+.page-home {
+    position: relative;
+    top: -60px;
+}
+
+.outer-wrapper {
+    background-color: #fff;
+    margin: 4em 0;
+}
+
+.section-header {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.lists-homepage {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.banner-dfp {
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.home-subHeader,
+.home-subHeader-top,
+.home-subHeader-bottom,
+.home-subHeader-pilihrajamobil {
+    font-family: "roboto_medium";
+    font-size: 25px;
+}
+
+.home-subHeader {
+    padding: 0px 0px 6px 5px;
+}
+
+.home-subHeader-top {
+    padding: 0 0 10px;
+    font-size: 22px;
+    font-weight: 500;
+    width: 50%;
+    position: relative;
+    top: 2em;
+}
+
+.home-subHeader-top span {
+    border-left: 5px solid #f16035;
+    margin-right: 10px;
+}
+
+.home-subHeader-bottom {
+    padding: 0px 0px 6px 0px;
+}
+
+.home-subHeader-pilihrajamobil {
+    text-align: center;
+    padding: 0 0 5px 0;
+    text-transform: uppercase;
+}
+
+.pilihrajamobil-subheader {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'roboto_thin';
+    letter-spacing: .2pt;
+    color: grey;
+}
+
+.banner-billboard {
+    padding: 0;
+}
+
+.lihat-semua {
+    font-size: 14px;
+    font-weight: bold;
+    color: #f16035;
+    letter-spacing: 0.5px;
+    position: relative;
+    bottom: 0;
+    width: 50%;
+    right: 10px;
+    text-align: right;
+}
+
+.lihat-semua.berita {
+    padding-bottom: 35px;
+}
+
+.lihat-semua a {
+    font-size: 16px;
+}
+
+ul.list-pilihrajamobil {
+    list-style-type: none;
+    margin: 0;
+    padding: 40px 0;
+    display: block;
+    overflow: hidden;
+}
+
+ul.list-pilihrajamobil li {
+    margin-bottom: 20px;
+    padding-left: 0;
+    min-height: 75px;
+}
+
+h3.sub-header-pilihanrajamobil {
+    font-family: 'roboto_bold';
+    font-size: 14px;
+    padding-bottom: 2px;
+}
+
+.icon {
+    display: inline;
+    display: inline-block
+}
+
+.icon-aman-terpecaya,
+.icon-aman-terpecaya\:regular {
+    background-image: url('../images/new-home/aman-terpecaya.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat
+}
+
+.icon-lengkap,
+.icon-lengkap\:regular {
+    background-image: url('../images/new-home/lengkap.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat
+}
+
+.icon-promo-harga-bersaing,
+.icon-promo-harga-bersaing\:regular {
+    background-image: url('../images/new-home/promo-harga-bersaing.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat
+}
+
+.icon-aman-terpecaya-dims,
+.icon-lengkap-dims,
+.icon-promo-harga-bersaing-dims {
+    width: 128px;
+    height: 128px
+}
+
+.btn-block-home {
+    display: block;
+    width: 85%;
+}
+
+.btn-outline-a {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-outline-a:hover,
+.btn-outline-a:active {
+    border: 1px solid #f16035;
+}
+
+.nav>li>a {
+    padding: 10px 0;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    color: rgba(51, 50, 51, 0.5);
+    background-color: transparent;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.merek-slide-container,
+.model-container {
+    position: relative;
+    max-width: 100%;
+    margin: 1em auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-left: 1.5em;
+}
+
+.merek-slide {
+    width: 96%;
+    height: 30px;
+    background: transparent;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.merek-slide::-webkit-scrollbar-track,
+.lists-models::-webkit-scrollbar-track,
+{
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+.merek-slide::-webkit-scrollbar,
+.lists-models::-webkit-scrollbar {
+    display: none;
+}
+
+.merek-slide::-webkit-scrollbar-thumb,
+.lists-models::-webkit-scrollbar {
+    background-color: #000000;
+}
+
+.merek-slide * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.merek-slide .item {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.merek-slide li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1em;
+    padding: 0;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.banding-mobil li {
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 0;
+    margin: 15px 1em;
+}
+
+.merek-slide a,
+.banding-mobil a {
+    padding: 0.5em 0;
+    color: rgba(51, 50, 51, 0.5);
+    position: relative;
+    letter-spacing: .5px;
+    text-decoration: none;
+}
+
+.merek-slide a:before,
+.merek-slide a:after,
+.banding-mobil a:before,
+.banding-mobil a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.merek-slide a:before,
+.banding-mobil a:before {
+    bottom: 0;
+    display: block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: #f16035;
+}
+
+.merek-slide a:after,
+.banding-mobil a:after {
+    position: absolute;
+    content: attr(data-hover);
+    color: #3B3B3B;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+}
+
+.merek-slide a:after {
+    padding: 0.5em 0;
+    left: 0;
+    top: 0;
+}
+
+.banding-mobil a:after {
+    padding: 0;
+    left: 0;
+    top: 10px;
+}
+
+.merek-slide a:hover:before,
+.merek-slide .current a:before,
+.banding-mobil a:hover:before,
+.banding-mobil .active a:before {
+    opacity: 1;
+    width: 100%;
+}
+
+.merek-slide a:hover:after,
+.merek-slide .current a:after,
+.banding-mobil a:hover:after,
+.banding-mobil .active a:after {
+    max-width: 100%;
+}
+
+.paddle {
+    position: absolute;
+    top: 0;
+    bottom: 6px;
+    width: 3em;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.left-paddle {
+    left: -13px;
+}
+
+.right-paddle {
+    right: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.paddle .fa,
+.navi-cont .fa {
+    font-size: 16px;
+}
+
+
+/* List Model Mobil in Homepage */
+
+.lists-models {
+    list-style: none;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    width: 95%;
+    background: transparent;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.lists-models li {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mod-img-cont {
+    width: 140px;
+    height: 80px;
+    text-align: center;
+}
+
+.mod-img-cont img {
+    height: 100%;
+}
+
+.navi-cont {
+    position: absolute;
+    top: 25px;
+    bottom: 6px;
+    width: 35px;
+    background: #f4f4f4;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+}
+
+.left-navi-cont {
+    left: 3px;
+}
+
+.right-navi-cont {
+    right: 0;
+}
+
+.content-list-price-wrapper .label-price button {
+    font-size: 10px;
+    background-color: #f04923;
+    border-radius: 0 !important;
+    border: 0px;
+}
+
+.bandingkan-list-home {
+    height: 100%;
+    padding: 1px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.bandingkan-list-home>.content {
+    padding: 10px 0;
+    display: block;
+    width: 45%;
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+}
+
+.bandingkan-list-home>.vs {
+    width: 10%;
+    color: tomato;
+    letter-spacing: .5pt;
+    font-size: 14px;
+    position: relative;
+    top: 5em;
+    height: 100%;
+    padding: 2px 4px;
+    text-align: center;
+    background: #f5f5f5;
+    border-radius: 2px;
+}
+
+.bandingkan-list-home>.content h5 {
+    font-family: "roboto_regular";
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.bandingkan-list-home .cimg {
+    width: 80%;
+    height: auto;
+    margin: 15px;
+    padding-top: 8px;
+}
+
+
+/* list mobil homepage*/
+
+.slide-content-home {
+    padding: 20px 0px;
+    overflow: auto;
+}
+
+.content-list-title {
+    margin-bottom: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.content-list-title h3 {
+    font-size: 14px;
+    font-family: "roboto_regular";
+    font-weight: 700;
+}
+
+.content-list-body {
+    overflow: hidden;
+    position: relative;
+}
+
+.content-list-image {
+    padding: 39% 0 0 0;
+    display: block;
+    width: 47%;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+
+.content-list-price {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.content-price,
+span.list-title-bold {
+    font-family: "roboto_bold";
+    font-size: 17px;
+}
+
+.content-price {
+    font-size: 14px;
+}
+
+.content-list-price-wrapper {
+    margin: 5px 0;
+}
+
+.content-list-price-wrapper .label-price span.tag-price {
+    color: #4990e2;
+    vertical-align: middle;
+    font-size: 11px;
+    line-height: 30px;
+}
+
+.content-list-price-wrapper .label-price span.tag-price .fa {
+    font-size: 17px;
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+}
+
+.content-list-price-wrapper-otr {
+    margin: 20px 0 4px 0;
+    text-align: center;
+}
+
+.content-list-price-wrapper-otr .label-price button {
+    font-size: 10px;
+    background-color: #f04923;
+    border-radius: 0 !important;
+    border: 0px;
+}
+
+img.image-list-home {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+ul.list-banner-home-middle {
+    list-style-type: none;
+    margin: 30px 0px;
+    padding: 0px;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+
+ul.list-banner-home-middle li {
+    padding: 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 24.76%;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+    height: 170px;
+    -webkit-box-shadow: 0px 2px 2px #dedede;
+    box-shadow: 0px 2px 2px #dedede;
+}
+
+ul.list-banner-home-middle li:hover {
+    border-bottom: 2px solid #dedede;
+}
+
+img.image-list-banner-home {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+ul.list-content-slide {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+ul.list-content-slide li {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+    width: 326px;
+    height: 175px;
+    display: inline-block;
+    float: none;
+    border-radius: 4px;
+}
+
+ul.list-content-slide li:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 2px 10px -3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 10px -3px rgba(0, 0, 0, 0.2);
+}
+
+ul.list-content-slide li a {
+    color: #585858;
+}
+
+ul.list-content-slide li:nth-child(2n) {
+    margin: 0px 15px;
+}
+
+ul.list-content-slide::-webkit-scrollbar {
+    width: 0em;
+}
+
+.content-list-price-wrapper i.fa-circle {
+    color: #e85d3b;
+}
+
+.content-list-title h3,
+.content-list-price-wrapper .content-price {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.content-list-price-wrapper .label-price {
+    font-size: 14px;
+}
+
+.content-list-price-wrapper .content-price {
+    width: 100%;
+}
+
+
+/* List artikel */
+
+ul#wrapper-list-artikel {
+    margin: 20px 0 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    overflow: hidden;
+    display: block;
+}
+
+ul#wrapper-list-artikel li {
+    padding: 0 0 10px 0;
+}
+
+ul#wrapper-list-artikel>li {
+    list-style-type: none;
+    float: left;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+ul#wrapper-list-artikel li:nth-child(1) {
+    width: 50%;
+    margin: 0 15px 0 0;
+}
+
+ul#wrapper-list-artikel li:nth-child(4),
+ul#wrapper-list-artikel li:nth-child(6) {
+    margin: 0;
+}
+
+ul#wrapper-list-artikel li:nth-child(1),
+ul#wrapper-list-artikel li:nth-child(6),
+ul#wrapper-list-artikel li:nth-child(7) {
+    border-bottom: none;
+}
+
+ul#wrapper-list-artikel li:nth-child(2n+3) {
+    margin: 16px 0;
+}
+
+ul#wrapper-list-artikel li:nth-child(5) {
+    padding-top: 5px;
+}
+
+ul#wrapper-list-artikel li:nth-child(1)>.wrapper-artikel-image {
+    width: 100%;
+}
+
+a.view-all-artikel {
+    margin-top: -10px;
+}
+
+a.gaevent {
+    display: block;
+}
+
+.berita-even {
+    color: #fff;
+    font-size: 16px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.wrapper-artikel {
+    background-color: #f3f3f5;
+    padding: 40px 0 50px;
+    margin-top: -20px;
+    position: relative;
+    bottom: -20px;
+}
+
+.wrapper-artikel-image {
+    display: block;
+    position: relative;
+    height: 90px;
+    overflow: hidden;
+    background: rgba(204, 204, 206, 0.6);
+    float: left;
+    width: 130px;
+    margin-right: 15px;
+}
+
+.wrapper-artikel-image img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.wrapper-artikel-content {
+    padding: 0;
+    float: left;
+    width: 68%;
+    height: 90px;
+    overflow: hidden;
+}
+
+.artikel-desc {
+    margin-top: -5px;
+    font-size: 16px;
+    height: 75px;
+    overflow: hidden;
+}
+
+.artikel-desc h3 {
+    font-family: 'roboto_regular';
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 2px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+ul#wrapper-list-artikel li {
+    width: 47%;
+    margin: 0;
+    padding: 0;
+}
+
+ul#wrapper-list-artikel li:nth-child(1)>.wrapper-artikel-image {
+    width: 100%;
+    float: none;
+    margin-right: 0px;
+    padding: 62% 0 0 0;
+}
+
+ul#wrapper-list-artikel li:nth-child(1)>.wrapper-artikel-content {
+    width: 100%;
+    float: none;
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+}
+
+ul#wrapper-list-artikel li:nth-child(1)>.wrapper-artikel-content .artikel-desc {
+    margin-top: -5px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    height: 95px;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+ul#wrapper-list-artikel li:nth-child(1)>.wrapper-artikel-content .artikel-info {
+    position: relative;
+    bottom: 30px;
+    color: #fff;
+    left: 20px;
+}
+
+ul#wrapper-list-artikel li:nth-child(1),
+ul#wrapper-list-artikel li:nth-child(6),
+ul#wrapper-list-artikel li:nth-child(7) {
+    border-bottom: none;
+}
+
+a.berita {
+    color: #58595b;
+}
+
+a.berita:hover {
+    color: #f16035;
+}
+
+.lists-containers {
+    position: relative;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+ul.rounded-lists {
+    list-style: none;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    width: 100%;
+    background: transparent;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+ul.rounded-lists li {
+    width: 200px;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 24px;
+}
+
+ul.rounded-lists a {
+    width: 100%;
+    text-align: center;
+}
+
+ul.rounded-lists img {
+    width: 110px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+ul.rounded-lists h5 {
+    font-family: "roboto_bold";
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    ul.list-content-slide {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    .list-pilihrajamobil .keterangan {
+        position: absolute;
+        top: 5px;
+        margin-left: 10.5em;
+        font-family: 'roboto_thin';
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .page-home {
+        top: 10px;
+    }
+    .outer-wrapper {
+        margin: 20px 8px;
+        text-align: center;
+    }
+    .btn-block-home {
+        width: 100%;
+        margin: 5px 0;
+    }
+    ul#wrapper-list-artikel {
+        padding: 0;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        overflow: scroll;
+        border: none;
+    }
+    ul#wrapper-list-artikel li:nth-child(1),
+    ul#wrapper-list-artikel li:nth-child(2),
+    ul#wrapper-list-artikel li:nth-child(3),
+    ul#wrapper-list-artikel li:nth-child(4) {
+        width: 225px;
+        margin: 0;
+        padding-bottom: 0;
+        border: 1px solid #cecccc;
+        margin-right: 5px;
+        border-radius: 3px;
+    }
+    ul#wrapper-list-artikel li:nth-child(1)>.wrapper-artikel-image,
+    ul#wrapper-list-artikel li:nth-child(2)>.wrapper-artikel-image,
+    ul#wrapper-list-artikel li:nth-child(3)>.wrapper-artikel-image,
+    ul#wrapper-list-artikel li:nth-child(4)>.wrapper-artikel-image {
+        padding: 0;
+        width: 100%;
+        height: 100px;
+        background: transparent;
+    }
+    ul#wrapper-list-artikel li:nth-child(1)>.wrapper-artikel-content .artikel-desc,
+    ul#wrapper-list-artikel li:nth-child(2)>.wrapper-artikel-content .artikel-desc,
+    ul#wrapper-list-artikel li:nth-child(3)>.wrapper-artikel-content .artikel-desc,
+    ul#wrapper-list-artikel li:nth-child(4)>.wrapper-artikel-content .artikel-desc {
+        margin-top: 5px;
+        background: transparent;
+        height: auto;
+        overflow: hidden;
+    }
+    ul#wrapper-list-artikel li:nth-child(1)>.wrapper-artikel-content .artikel-info,
+    ul#wrapper-list-artikel li:nth-child(2)>.wrapper-artikel-content .artikel-info,
+    ul#wrapper-list-artikel li:nth-child(3)>.wrapper-artikel-content .artikel-info,
+    ul#wrapper-list-artikel li:nth-child(4)>.wrapper-artikel-content .artikel-info {
+        position: absolute;
+        bottom: 3px;
+        color: #bbbbbb;
+        left: 11px;
+        font-size: 9px;
+    }
+    ul#wrapper-list-artikel li:nth-child(1)>.wrapper-artikel-content,
+    ul#wrapper-list-artikel li:nth-child(2)>.wrapper-artikel-content,
+    ul#wrapper-list-artikel li:nth-child(3)>.wrapper-artikel-content,
+    ul#wrapper-list-artikel li:nth-child(4)>.wrapper-artikel-content {
+        bottom: 0;
+        width: 100%;
+    }
+    .wrapper-artikel-content {
+        height: 60px;
+    }
+    .wrapper-artikel-image img {
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 4px 4px 0 0;
+        top: 0;
+    }
+    .berita-even,
+    .berita {
+        padding: 0 10px;
+        margin-bottom: 0;
+        color: #585858;
+    }
+    .artikel-desc h3 {
+        font-family: 'roboto_regular';
+        font-size: 11px;
+        line-height: 12px;
+    }
+    .nop {
+        margin-top: 12em;
+    }
+    .home-subHeader-top {
+        width: 100%;
+        font-size: 16px;
+    }
+    ul.list-content-slide {
+        position: relative;
+        left: 0;
+    }
+    ul.list-content-slide li {
+        width: 250px;
+        height: 130px;
+    }
+    ul.list-content-slide li:nth-child(2n) {
+        margin: 0px 5px;
+    }
+    .home-subHeader-top span {
+        border-left: 3px solid #f16035;
+        margin-right: 5px;
+    }
+    .lihat-semua {
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 0;
+        right: 0;
+    }
+    .content-list-title {
+        margin: 5px 0 0 5px;
+    }
+    .content-list-title h3 {
+        font-size: 12px;
+    }
+    .content-price {
+        font-size: 11px;
+    }
+    span.list-title-bold {
+        font-family: "roboto_bold";
+        font-size: 14px;
+    }
+    .content-list-image {
+        width: 43%;
+        padding: 0;
+        height: 90px;
+    }
+    .content-list-price-wrapper:nth-child(1) {
+        margin: 0;
+    }
+    .content-list-price-wrapper:nth-child(2) {
+        margin: 5px 0px 0px 0px;
+    }
+    .content-list-price-wrapper .label-price {
+        font-size: 11px;
+    }
+    .content-list-price {
+        margin-left: 5px;
+        margin-top: 10px;
+        width: 48%;
+    }
+    .content-list-price-wrapper .label-price a.tag-price {
+        font-size: 9px;
+    }
+    .content-list-price-wrapper .label-price a.tag-price .fa {
+        font-size: 14px;
+    }
+    .list-berita {
+        display: block;
+        overflow: scroll;
+        margin-bottom: 30px;
+    }
+    .home-subHeader-pilihrajamobil {
+        font-size: 18px;
+        padding: 20px 0 5px 0;
+    }
+    .pilihrajamobil-subheader {
+        font-family: "roboto_regular";
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.5);
+        padding-top: 10px;
+    }
+    .nop {
+        margin-top: 30px;
+    }
+    .top-space {
+        margin: 3em auto;
+    }
+    .home-icon-top {
+        background: #fff;
+        width: 100%;
+        height: 80px;
+        border-radius: 4px;
+        border: 1px solid rgba(154, 154, 154, 0.1);
+        text-align: center;
+        -webkit-box-shadow: 0 2px 6px rgba(99, 99, 99, 0.15);
+        box-shadow: 0 2px 6px rgba(99, 99, 99, 0.15);
+    }
+    .home-icon-top img {
+        padding: 7px 32% 5px;
+    }
+    .home-icon-top p {
+        text-align: center;
+    }
+    .paddle {
+        bottom: 10px;
+    }
+    .right-paddle {
+        right: -10px;
+    }
+    .merek-slide-container {
+        padding-left: 0;
+    }
+    .left-navi-cont {
+        left: 0;
+    }
+    .right-navi-cont {
+        right: -5px;
+    }
+    ul.list-banner-home-middle {
+        margin: 0 0 15px 0;
+    }
+    ul.list-banner-home-middle li {
+        width: 49%;
+        height: 130px;
+    }
+    ul.list-banner-home-middle li:nth-child(1),
+    ul.list-banner-home-middle li:nth-child(2) {
+        margin-bottom: 0;
+    }
+    ul.list-banner-home-middle li:nth-child(2n-1) {
+        margin-right: 0;
+    }
+    img.image-list-banner-home {
+        width: 100%;
+    }
+    ul.list-pilihrajamobil li {
+        text-align: center;
+        padding-right: 0;
+    }
+    ul.list-pilihrajamobil li .keterangan {
+        position: relative;
+        left: 0;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+    .bandingkan-list-home {
+        width: 100%;
+    }
+    .bandingkan-list-home>.content {
+        padding: 0;
+        height: auto;
+    }
+    .bandingkan-list-home .cimg {
+        margin: 0;
+        padding-top: 0;
+        width: 100%;
+    }
+    .bandingkan-list-home>.content h5 {
+        font-size: 14px;
+    }
+    .bandingkan-list-home>.content p {
+        font-size: 9.5px;
+        font-family: "roboto_bold";
+    }
+    .bandingkan-list-home>.vs {
+        top: 4em;
+        font-size: 12px;
+    }
+    ul.rounded-lists li {
+        width: 160px;
+        margin: 10px 0;
+    }
+    ul.rounded-lists img {
+        width: 80px;
+    }
+    ul.rounded-lists h5 {
+        font-size: 13px;
+    }
+    ul.rounded-lists p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 359px) and (-webkit-min-device-pixel-ratio: 2) {
+    .container {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .container-ads {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .outer-wrapper {
+        margin: 2em 0;
+    }
+    .menu-content-pencarian {
+        top: 45px;
+    }
+    .merek-slide-container,
+    .model-container {
+        padding-left: 0;
+    }
+    .nop {
+        margin-top: 15px;
+    }
+    .top-space {
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+    .home-icon-top {
+        background: whitesmoke;
+        width: 100%;
+        height: 80px;
+        border-radius: 4px;
+        border: 1px solid #dedede;
+    }
+    .home-icon-top img {
+        padding: 7px 27px 5px 27px;
+    }
+    .home-icon-top p {
+        text-align: center;
+    }
+    .merek-slide li {
+        font-size: 12px;
+    }
+    .mod-img-cont {
+        width: 100%;
+        height: 70px;
+    }
+    .lists-models li {
+        font-size: 12px;
+    }
+    .paddle {
+        bottom: 11px;
+    }
+    .content-list-image {
+        width: 45%;
+    }
+    .content-list-price {
+        width: 50%;
+    }
+    .content-list-title h3 {
+        font-size: 12px;
+    }
+    .content-list-title h3 span {
+        font-size: 13px;
+    }
+    .content-price,
+    .label-price {
+        font-size: 10px;
+        font-weight: 100px;
+    }
+    .carimobil-menu-samping .header h1,
+    .carimobil-model-mobile .header h1 {
+        margin-left: 8%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    ul.list-banner-home-middle li {
+        width: 24%;
+        height: 115px;
+    }
+    .wrapper-artikel-image {
+        margin-right: 9px;
+    }
+    ul.list-pilihrajamobil {
+        text-align: center;
+    }
+    ul.list-pilihrajamobil li {
+        padding: 0 20px;
+    }
+    .wrapper-artikel-content {
+        width: 55%;
+    }
+    ul.list-banner-home-middle li {
+        width: 24%;
+        height: 120px;
+    }
+}

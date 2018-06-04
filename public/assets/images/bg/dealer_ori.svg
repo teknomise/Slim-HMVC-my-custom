@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="115" viewBox="0 0 115 115">
+    <defs>
+        <rect id="a" width="115" height="115" rx="57.5"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <use fill="#FFF" xlink:href="#a"/>
+            <rect width="114" height="114" x=".5" y=".5" stroke="#000" stroke-opacity=".12" rx="57"/>
+        </g>
+        <g fill-rule="nonzero">
+            <path fill="#BCBEC0" d="M55.443 40.073v28.91h30.06V50.93z"/>
+            <path fill="#F1F2F2" stroke="#BCBEC0" stroke-width=".3" d="M30.193 49.525l25.25-9.452v28.91h-25.25z"/>
+            <path fill="#FFF" d="M27.213 68.984h60.291v1H27.213z"/>
+            <g fill="#BCBEC0">
+                <path d="M38.283 68.941h6.047v-9.878L38.283 60zM37.39 60.127l-5.238.81v8.004h5.237zM45.224 58.935v10.006h7.962v-11.24z"/>
+            </g>
+            <path fill="#EE5A2A" d="M55.443 51.1l-25.25 6.004v-5.45l25.25-8.77zM85.503 59.063l-30.06-7.877v-8.303l30.06 10.39z" opacity=".653"/>
+            <path fill="#F1F2F2" d="M75.88 68.984H63.32V31.557L75.88 25z"/>
+            <path fill="#BCBEC0" d="M77.626 68.984H75.88V25l1.746 1.405z"/>
+            <path fill="#EE5A2A" d="M75.88 41.861l-12.56 3.534v-10.9l12.56-5.535z" opacity=".653"/>
+            <path fill="#F15B2A" d="M77.626 42.585l-1.746-.724V28.96l1.746.98z" opacity=".65"/>
+        </g>
+        <text fill="#000" font-family="Roboto-Light, Roboto" font-size="12" font-weight="300">
+            <tspan x="24.77" y="86">Dealer Mobil</tspan>
+        </text>
+    </g>
+</svg>

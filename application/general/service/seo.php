@@ -59,36 +59,38 @@ class Seo {
         }
 
         $seo_theme = '
-        <title>'.$arr_seo["title"].'</title>
-        <meta name="description" content="'.$arr_seo["description"].'" />
-        <!-- Schema.org markup for Google+ -->
-        <meta itemprop="name" content="'.$arr_seo['name'].'">
-        <meta itemprop="description" content="'.$arr_seo['description'].'">
-        <meta itemprop="image" content="'.$arr_seo['image'].'">
-        <meta itemprop="url" content="'.$arr_seo['url'].'">
-        
-        <!-- Twitter Card data -->
-        <meta name=”twitter:card” content=”summary_large_image”>
-        <meta name="twitter:site" content="@RajaMobilCom">
-        <meta name="twitter:title" content="'.$arr_seo['title'].'">
-        <meta name="twitter:description" content="'.$arr_seo["description"].'">
-        <meta name="twitter:creator" content="@RajaMobilCom">
-        <meta name="twitter:image" content="'.$arr_seo["image"].'">
-              
-        <!-- Open Graph data -->
-        <meta property="fb:app_id" content="181411581975733">
-        <meta property="og:title" content="'.$arr_seo['title'].'" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="'.$arr_seo['url'].'" />
-        <meta property="og:image" content="'.$arr_seo['image'].'" />
-        <meta property="og:description" content="'.$arr_seo["description"].'" />
-        <meta property="og:site_name" content="'.$arr_seo['name'].'" />
-             
-        <meta name="msvalidate.01" content="EF945FF5D3FE1A18CCA2F16107AF3A37">
-        <link rel="canonical" href="'.$arr_seo["cannonical"].'" />
+            <title>'.$arr_seo["title"].'</title>
+            <meta name="description" content="'.$arr_seo["description"].'" />
+            <!-- Schema.org markup for Google+ -->
+            <meta itemprop="name" content="'.$arr_seo['name'].'">
+            <meta itemprop="description" content="'.$arr_seo['description'].'">
+            <meta itemprop="image" content="'.$arr_seo['image'].'">
+            <meta itemprop="url" content="'.$arr_seo['url'].'">
+            
+            <!-- Twitter Card data -->
+            <meta name=”twitter:card” content=”summary_large_image”>
+            <meta name="twitter:site" content="@RajaMobilCom">
+            <meta name="twitter:title" content="'.$arr_seo['title'].'">
+            <meta name="twitter:description" content="'.$arr_seo["description"].'">
+            <meta name="twitter:creator" content="@RajaMobilCom">
+            <meta name="twitter:image" content="'.$arr_seo["image"].'">
+                
+            <!-- Open Graph data -->
+            <meta property="fb:app_id" content="181411581975733">
+            <meta property="og:title" content="'.$arr_seo['title'].'" />
+            <meta property="og:type" content="article" />
+            <meta property="og:url" content="'.$arr_seo['url'].'" />
+            <meta property="og:image" content="'.$arr_seo['image'].'" />
+            <meta property="og:description" content="'.$arr_seo["description"].'" />
+            <meta property="og:site_name" content="'.$arr_seo['name'].'" />
+                
+            <meta name="msvalidate.01" content="EF945FF5D3FE1A18CCA2F16107AF3A37">
+            <link rel="canonical" href="'.$arr_seo["cannonical"].'" />
         ';
 
         return $seo_theme.self::robotTag();
     }
+
+  
 }
 ?>

@@ -10,8 +10,9 @@ namespace Application\Errors;
 
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
+//use \Exception;
 
-final class ErrorController
+final class ErrorController extends \Slim\Handlers\Error
 {
     protected $view;
    
@@ -20,16 +21,17 @@ final class ErrorController
         $this->view = $view;    
     }
 
-    public function not_found(Request $request, Response $response, $args)
+    public function not_found(Request $request, Response $response)
     {
         
         $data = [
             "header_sales" => true,
-
         ];
    
         $this->view->render($response, ERROR_400THEME, $data);
         return $response;
+
+      
     }
 
    

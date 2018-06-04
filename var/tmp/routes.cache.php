@@ -1,11 +1,17 @@
 <?php return array (
   0 => 
   array (
+    'POST' => 
+    array (
+      '/ajax/get-merek-baru' => 'route0',
+      '/ajax/get-list-mobil-baru' => 'route1',
+      '/cari-motor-baru' => 'route6',
+    ),
     'GET' => 
     array (
-      '/sorry' => 'route0',
-      '/' => 'route1',
-      '/paket-umroh/' => 'route2',
+      '/sorry' => 'route2',
+      '/' => 'route3',
+      '/detail-motor/' => 'route4',
     ),
   ),
   1 => 
@@ -14,12 +20,12 @@
     array (
       0 => 
       array (
-        'regex' => '~^(?|/paket\\-umroh/([a-zA-Z0-9\\-]+))$~',
+        'regex' => '~^(?|/detail\\-motor/([a-zA-Z0-9\\-]+))$~',
         'routeMap' => 
         array (
           2 => 
           array (
-            0 => 'route3',
+            0 => 'route5',
             1 => 
             array (
               'slug' => 'slug',

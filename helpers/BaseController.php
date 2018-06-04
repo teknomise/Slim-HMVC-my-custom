@@ -7,26 +7,26 @@
  * @Last Modified time: 
  */
 
-namespace Controller;
+namespace Helpers;
 
-final class BaseController
+ class BaseController
 {
 
-    public static function removeSpecialCharExceptDash($str){
+    public function removeSpecialCharExceptDash($str){
         $pattern = array("/\s+/", "/[^a-zA-Z0-9-]/", "/-+/");
         $replace = array("-", "", "-");
         $new_str = preg_replace($pattern, $replace, $str);
         return $new_str;
     }
     
-    public static function removeSpecialChar($str){
+    public function removeSpecialChar($str){
         $pattern = array("/\s+/", "/[^a-zA-Z0-9]/");
         $replace = array("", "");
         $new_str = preg_replace($pattern, $replace, $str);
         return $new_str;
     }
 
-    public static function getUriWithoutParam($request){
+    public function getUriWithoutParam($request){
         $result = "";
         $full_uri = $request->getUri();
         $uri_ar = explode("?", $full_uri, 2);
@@ -34,7 +34,7 @@ final class BaseController
         return $result;
     }
 
-    public static function getValue($source_array, $key){
+    public function getValue($source_array, $key){
         $result = null;
         if (isset($source_array[$key]) || array_key_exists($key, $source_array)) { 
             $result = $source_array[$key];
@@ -42,11 +42,11 @@ final class BaseController
         return $result;
     }
 
-    public static function lastVisitURL($url) { 
+    public function lastVisitURL($url) { 
         return $_SESSION['last_visit'] = $url; 
     }
 
-    public static function create_directory( $target ) {
+    public function create_directory( $target ) {
         $wrapper = null;
 
         // strip the protocol

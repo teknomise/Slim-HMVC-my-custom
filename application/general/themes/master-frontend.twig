@@ -5,12 +5,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"> {{ meta.seo | raw }}
-    <link rel="icon" href="{{ base_url() }}/assets/images/logo/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="{{ base_url() }}/assets/css/main-framework.css">
-    <link rel="stylesheet" href="{{ base_url() }}/assets/css/main-style.css"> {{ added_css | raw }}
+    <link rel="icon" href="{{ base_url() }}/assets/images/logo/favicon.ico" type="image/x-icon"> {% if isProduction %} {% block css_assets %}{% endblock %} {% else %} {{ css_assets | raw }} {% endif %}
+    <script src="{{ base_url() }}/assets/js/ga-script.js"></script>
 </head>
 
-<body>
+<body data-ctrl="{{ controller }}" data-url="{{ base_url() }}">
     <div class="overlay-body"></div>
     <div class="overlay-menu"></div>
     {% include 'general/themes/header.twig' %}
@@ -19,9 +18,8 @@
     </main>
     {% include 'general/themes/footer.twig' %}
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="{{ base_url() }}/assets/js/main-framework.js"></script>
-{{ added_script | raw }}
+
+{% if isProduction %} {% block js_assets %}{% endblock %} {% else %} {{ js_assets | raw }} {% endif %}
 
 </html>
 {% endspaceless %}

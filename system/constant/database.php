@@ -12,7 +12,7 @@ define("SQL_UPDATE", 2);
 define("SQL_CREATE", 3);
 define("SQL_DELETE", 4);
 
-//SQL
+define("LIMIT_MOBIL_PER_PAGE", 24);
 
 
 

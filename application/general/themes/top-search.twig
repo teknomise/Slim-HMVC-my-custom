@@ -1,0 +1,45 @@
+<!-- Search Header -->
+<div class="search-header">
+    <select id="searchmobilheader" class="minimal hidden-sm hidden-xs" name="kondisikendaraan">
+        <option value="0" selected="">Mobil Baru</option>
+    </select>
+    <div class="inner-addon right-addon">
+        <i class="glyphicon glyphicon-search"></i>
+        <input type="text" class="top-search-action tsaw" name="top-search" value="" maxlength="100" placeholder="Temukan mobil idaman Anda">
+    </div>
+
+    <div class="search-result hidden-xs hidden-sm">
+        <div class="mobile-result"> </div>
+        <div class="sales-result"></div>
+        <div class="dealer-result"></div>
+        <div class="cleaner"></div>
+    </div>
+    <div class="cleaner"></div>
+</div>
+
+<!-- Search Header For Mobile -->
+<div id="morphsearch" class="morphsearch">
+    <form class="morphsearch-form">
+        <div class="arrow-left">
+            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI2OC44MzMgMjY4LjgzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjY4LjgzMyAyNjguODMzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTI1Ni4zMzMsMTIxLjkxNkg0Mi42NzlsNTguNjU5LTU4LjY2MWM0Ljg4Mi00Ljg4Miw0Ljg4Mi0xMi43OTYsMC0xNy42NzhjLTQuODgzLTQuODgxLTEyLjc5Ny00Ljg4MS0xNy42NzgsMGwtNzkuOTk4LDgwICAgYy00Ljg4Myw0Ljg4Mi00Ljg4MywxMi43OTYsMCwxNy42NzhsODAsODBjMi40MzksMi40MzksNS42NCwzLjY2MSw4LjgzOSwzLjY2MXM2LjM5Ny0xLjIyMiw4LjgzOS0zLjY2MSAgIGM0Ljg4Mi00Ljg4Miw0Ljg4Mi0xMi43OTYsMC0xNy42NzhsLTU4LjY2MS01OC42NjFoMjEzLjY1NGM2LjkwMywwLDEyLjUtNS41OTgsMTIuNS0xMi41ICAgQzI2OC44MzMsMTI3LjUxMywyNjMuMjM2LDEyMS45MTYsMjU2LjMzMywxMjEuOTE2eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=">
+        </div>
+        <input class="morphsearch-input" type="search" placeholder="Cari mobil impian anda?">
+    </form>
+    <div class="morphsearch-content">
+        <ul class="search-type">
+            <li class="active" style="visibility: hidden"><a data-toggle="pill" href="#mobil-baru" data-mobilid="1">Mobil Baru</a></li>
+            <!-- <li><a data-toggle="pill" href="#mobil-bekas" data-mobilID="2">Mobil Bekas</a></li>-->
+            <!-- <li><a data-toggle="pill" href="#mobil-cbu" data-mobilID="3">Mobil Baru Importir Umum</a></li>-->
+        </ul>
+        <div class="tab-content">
+            <div id="mobil-baru" class="tab-pane fade in active">
+                <div class="result-car-mob"></div>
+                <div class="result-sales-mob"></div>
+                <!-- <div class="result-dealer-mob"></div> -->
+            </div>
+            <div id="mobil-bekas" class="tab-pane fade"></div>
+            <div id="mobil-cbu" class="tab-pane fade"></div>
+        </div>
+    </div>
+    <span class="morphsearch-close"></span>
+</div>

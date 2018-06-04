@@ -1455,7 +1455,7 @@ body {
     font: normal 13px "roboto_regular", "Arial", Helvetica, sans-serif;
     background: transparent;
     overflow-x: hidden;
-    color: #888;
+    color: #333;
 }
 
 input,
@@ -1469,7 +1469,7 @@ textarea {
 
 a {
     text-decoration: none;
-    color: #888;
+    color: #333;
 }
 
 a:hover,

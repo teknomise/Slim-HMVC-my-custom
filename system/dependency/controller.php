@@ -23,6 +23,12 @@ $container['Application\Modules\Motor\Detail'] = function ($c) {
     );
 };
 
+$container['Application\Modules\General\Site'] = function($c) {
+    return new \Application\Modules\General\Site\SiteController(
+        $c->get('view')
+    );
+};
+
 
 
 
